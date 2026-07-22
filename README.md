@@ -133,7 +133,7 @@ Administrative Template policy configured to prevent Command Prompt access.
 
 ---
 
-## Phase 4 – Policy Validation
+## Phase 4 – Policy Validation & Validation
 
 ### Control Panel Restriction Validation
 
@@ -146,6 +146,12 @@ Verification that Control Panel access is blocked by Group Policy.
 Verification that Command Prompt access is blocked through Group Policy.
 
 ![Command Prompt Blocked](images/Command%20Prompt%20Blocked.png)
+
+### Group Policy Verification
+
+Verified successful Group Policy deployment using `gpresult`, confirming that the intended Group Policy Objects were applied to the client workstation.
+
+![GPResult](images/GPResult.png)
 
 ## Step 1 - Install Windows Server 2022
 
