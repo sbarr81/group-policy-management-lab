@@ -215,10 +215,14 @@ gpresult /h report.html
 
 ## Repository Structure
 
-```
-docs/
-images/
-README.md
+```text
+group-policy-management-lab/
+├── docs/
+├── images/
+│   ├── architecture.drawio
+│   ├── architecture.png
+│   └── screenshots/
+├── README.md
 ```
 
 ## Troubleshooting
@@ -241,6 +245,14 @@ Verified the user/computer was located in the correct Organizational Unit (OU), 
 
 **Resolution:**
 Used `gpresult` to verify which Group Policy Objects were applied and confirmed there were no security filtering or inheritance conflicts.
+
+## Key Takeaways
+
+- Designed an enterprise-style Active Directory Organizational Unit structure.
+- Created and linked Group Policy Objects to specific Organizational Units.
+- Implemented user and workstation security restrictions.
+- Verified successful policy application using Group Policy Management and `gpresult`.
+- Documented deployment steps and troubleshooting procedures.
 
 ## Future Enhancements
 
