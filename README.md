@@ -71,6 +71,136 @@ This project demonstrates the deployment and administration of an enterprise Act
 - Security Policy Deployment
 - Technical Documentation
 
+## Screenshots
+
+### Enterprise OU Structure
+
+Enterprise Organizational Unit (OU) hierarchy used to separate users, workstations, servers, and administrative functions.
+
+![Enterprise OU Structure](images/Enterprise%20OU%20Structure.png)
+
+---
+
+### Group Policy Management Console
+
+Group Policy Management Console showing the configured GPOs and linked Organizational Units.
+
+![Group Policy Management](images/Group%20Policy%20Management.png)
+
+---
+
+### IT Users and Security Groups
+
+IT Organizational Unit containing administrative users and security groups used for policy targeting.
+
+![IT User](images/IT%20User.png)
+
+---
+
+### Domain-Joined Workstation
+
+CLIENT01 successfully joined to the Active Directory domain and placed in the Workstations Organizational Unit.
+
+![CLIENT01](images/CLIENT01%20in%20Workstations%20OU.png)
+
+---
+
+### IT User Restrictions
+
+Group Policy Object linked to the IT Organizational Unit.
+
+![IT User Restrictions](images/IT%20User%20Restrictions%20Linked.png)
+
+---
+
+### Workstation Security Policy
+
+Security policy linked to the Workstations Organizational Unit.
+
+![Workstation Security Policy](images/Workstation%20Security%20Policy%20Linked.png)
+
+---
+
+### Control Panel Restriction Validation
+
+Verification that Control Panel access is blocked by Group Policy.
+
+![Control Panel Blocked](images/Control%20Panel%20Blocked.png)
+
+---
+
+### Command Prompt Restriction Validation
+
+Verification that Command Prompt access is blocked through Group Policy.
+
+![Command Prompt Blocked](images/Command%20Prompt%20Blocked.png)
+
+## Step 1 - Install Windows Server 2022
+
+- Create VirtualBox VM
+- Configure networking
+- Install Windows Server
+- Apply updates
+
+---
+
+## Step 2 - Install Active Directory
+
+- Install AD DS role
+- Promote server to Domain Controller
+- Configure DNS
+
+---
+
+## Step 3 - Create Organizational Units
+
+- IT
+- HR
+- Finance
+- Sales
+- Workstations
+
+---
+
+## Step 4 - Create Users
+
+- Test users
+- Security groups
+- Administrative accounts
+
+---
+
+## Step 5 - Join Windows 11 Client
+
+- Configure DNS
+- Join domain
+- Verify authentication
+
+---
+
+## Step 6 - Configure Group Policies
+
+Examples:
+
+- Password Policy
+- Account Lockout
+- Desktop Wallpaper
+- USB Restrictions
+- Control Panel Restrictions
+- Windows Updates
+
+---
+
+## Step 7 - Validate Policies
+
+Commands used:
+
+gpupdate /force
+
+gpresult /r
+
+gpresult /h report.html
+
 ## Repository Structure
 
 ```
@@ -78,6 +208,27 @@ docs/
 images/
 README.md
 ```
+
+## Troubleshooting
+
+### Issue: Client could not locate the domain
+
+**Resolution:**
+Verified that the Windows 11 client was using the Domain Controller as its primary DNS server and confirmed network connectivity before attempting to join the domain.
+
+---
+
+### Issue: Group Policy not applying
+
+**Resolution:**
+Verified the user/computer was located in the correct Organizational Unit (OU), confirmed the GPO was linked and enabled, and forced a policy refresh using `gpupdate /force`.
+
+---
+
+### Issue: Policy settings not taking effect
+
+**Resolution:**
+Used `gpresult` to verify which Group Policy Objects were applied and confirmed there were no security filtering or inheritance conflicts.
 
 ## Future Enhancements
 
