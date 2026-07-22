@@ -71,7 +71,9 @@ This project demonstrates the deployment and administration of an enterprise Act
 - Security Policy Deployment
 - Technical Documentation
 
-## Screenshots
+# Screenshots
+
+## Phase 1 – Environment Setup
 
 ### Enterprise OU Structure
 
@@ -79,7 +81,21 @@ Enterprise Organizational Unit (OU) hierarchy used to separate users, workstatio
 
 ![Enterprise OU Structure](images/Enterprise%20OU%20Structure.png)
 
+### IT Users and Security Groups
+
+IT Organizational Unit containing administrative users and security groups used for policy targeting.
+
+![IT User](images/IT%20User.png)
+
+### Domain-Joined Workstation
+
+CLIENT01 successfully joined to the Active Directory domain and placed into the Workstations Organizational Unit.
+
+![CLIENT01](images/CLIENT01%20in%20Workstations%20OU.png)
+
 ---
+
+## Phase 2 – Group Policy Configuration
 
 ### Group Policy Management Console
 
@@ -87,31 +103,11 @@ Group Policy Management Console showing the configured GPOs and linked Organizat
 
 ![Group Policy Management](images/Group%20Policy%20Management.png)
 
----
-
-### IT Users and Security Groups
-
-IT Organizational Unit containing administrative users and security groups used for policy targeting.
-
-![IT User](images/IT%20User.png)
-
----
-
-### Domain-Joined Workstation
-
-CLIENT01 successfully joined to the Active Directory domain and placed in the Workstations Organizational Unit.
-
-![CLIENT01](images/CLIENT01%20in%20Workstations%20OU.png)
-
----
-
-### IT User Restrictions
+### IT User Restrictions GPO
 
 Group Policy Object linked to the IT Organizational Unit.
 
 ![IT User Restrictions](images/IT%20User%20Restrictions%20Linked.png)
-
----
 
 ### Workstation Security Policy
 
@@ -121,13 +117,29 @@ Security policy linked to the Workstations Organizational Unit.
 
 ---
 
+## Phase 3 – Policy Configuration
+
+### Disable Control Panel Policy
+
+Administrative Template policy configured to prohibit Control Panel and PC Settings access.
+
+![Control Panel Policy](images/Control%20Panel%20Policy.png)
+
+### Disable Command Prompt Policy
+
+Administrative Template policy configured to prevent Command Prompt access.
+
+![Command Prompt Policy](images/Command%20Prompt%20Policy.png)
+
+---
+
+## Phase 4 – Policy Validation
+
 ### Control Panel Restriction Validation
 
 Verification that Control Panel access is blocked by Group Policy.
 
 ![Control Panel Blocked](images/Control%20Panel%20Blocked.png)
-
----
 
 ### Command Prompt Restriction Validation
 
