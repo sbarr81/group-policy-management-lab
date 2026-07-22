@@ -1,6 +1,37 @@
-# group-policy-management-lab
+# Enterprise Group Policy Management Lab
+
+[![Windows Server 2022](https://img.shields.io/badge/Windows%20Server-2022-0078D6?logo=windows)](https://www.microsoft.com/windows-server)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-Lab-success)
+![Group Policy](https://img.shields.io/badge/Group%20Policy-GPO-blue)
+![VirtualBox](https://img.shields.io/badge/Oracle-VirtualBox-orange?logo=virtualbox)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 Enterprise Group Policy Management using Windows Server 2022 Active Directory.
+
+## Table of Contents
+
+- Overview
+- Architecture
+- Technologies Used
+- Lab Objectives
+- Environment
+- Step-by-Step Deployment
+- Group Policy Configuration
+- Validation
+- Troubleshooting
+- Skills Demonstrated
+- Future Improvements
+
+## Environment
+
+| Component | Configuration |
+|-----------|---------------|
+| Hypervisor | Oracle VirtualBox |
+| Domain Controller | Windows Server 2022 |
+| Client | Windows 11 Enterprise |
+| DNS | Active Directory Integrated |
+| Domain | company.local |
+| Group Policy | Group Policy Management Console |
 
 ## Architecture
 
