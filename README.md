@@ -8,20 +8,6 @@
 
 Enterprise Group Policy Management using Windows Server 2022 Active Directory.
 
-## Table of Contents
-
-- Overview
-- Architecture
-- Technologies Used
-- Lab Objectives
-- Environment
-- Step-by-Step Deployment
-- Group Policy Configuration
-- Validation
-- Troubleshooting
-- Skills Demonstrated
-- Future Improvements
-
 ## Environment
 
 | Component | Configuration |
@@ -36,6 +22,17 @@ Enterprise Group Policy Management using Windows Server 2022 Active Directory.
 ## Architecture
 
 ![Enterprise Architecture](images/architecture.png)
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Lab Objectives](#lab-objectives)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Screenshots](#screenshots)
+- [Troubleshooting](#troubleshooting)
+- [Key Takeaways](#key-takeaways)
+- [Future Enhancements](#future-enhancements)
 
 ## Overview
 
@@ -268,3 +265,13 @@ Used `gpresult` to verify which Group Policy Objects were applied and confirmed 
 - Windows Server Update Services (WSUS)
 - Group Policy Preferences
 - PowerShell Automation
+
+## Project Summary
+
+This project demonstrates the design, implementation, and validation of an enterprise-style Active Directory environment using Windows Server 2022. The lab includes Organizational Unit (OU) design, user and group management, Group Policy Object (GPO) creation and deployment, client domain integration, and policy verification using native Windows administrative tools such as Group Policy Management and `gpresult`.
+
+This project strengthened my hands-on experience with Active Directory administration, Group Policy management, troubleshooting, and technical documentation while following enterprise administration best practices.
+
+---
+
+Thank you for reviewing this project. Feedback and suggestions are always welcome.
